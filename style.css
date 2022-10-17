@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 10vh auto 0 auto;
+}
+#display {
+  height: 70px;
+  text-align: right;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+.btn {
+  border: 0.5px solid #999;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+#equal {
+  background-color: rgb(4, 4, 235);
+  color: white;
+}
+.btn:hover {
+  background-color: #323330;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
