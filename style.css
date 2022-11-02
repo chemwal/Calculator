@@ -1,33 +1,40 @@
-.container {
+#calculatorBody {
   width: 100%;
   max-width: 400px;
   margin: 10vh auto 0 auto;
 }
-#display {
-  height: 70px;
+#answer {
+  width: 370px;
+  /* height: 4rem; */
+  /* display: inline-block; */
   text-align: right;
-  line-height: 70px;
-  padding: 16px 8px;
-  font-size: 25px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: large;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background: lightgrey;
 }
-.keypad {
+.row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   padding: 10px;
 }
-.btn {
+input {
   border: 0.5px solid #999;
   line-height: 100px;
   text-align: center;
   font-size: 25px;
   cursor: pointer;
 }
-#equal {
+
+#equals {
   background-color: rgb(4, 4, 235);
   color: white;
 }
-.btn:hover {
+input:hover {
   background-color: #323330;
   color: white;
   transition: 0.5s ease-in-out;
