@@ -74,9 +74,8 @@ function operatorButton(arg) {
   }
 }
 function deleteLastCharacter() {
-  input = input.slice(0, input.length - 1);
-  console.log(input);
+  input = input.slice(0, -1);
   document.getElementById('answer').innerHTML = input;
-
-  // if
 }
+function openBracket() {}
+function closeBracket() {}
