@@ -1,18 +1,15 @@
-console.log('Hello World');
-let display = document.getElementById('display');
-let btn = document.querySelectorAll('button');
+let display = document.getElementById('#display');
+let keypad = document.querySelector('.keypad');
+document.querySelectorAll('button').forEach((button) => {
+  button.addEventListener;
+});
 let ans = '';
 btn.forEach((b) => {
   b.addEventListener('click', (event) => {
     if (event.target.innerText == 'CE') {
-      ans = '';
-      display.innerText = ans;
-    } else if (event.target.innerText == '=') {
-      display.innerText = eval(ans);
-      ans = '';
-    } else {
-      ans += event.target.innerText;
-      display.innerText = ans;
+      display.innerText = '';
+    } else if (display.innerText == '' && event.target.innerText == NaN) {
+      console.log('Enter a number');
     }
   });
 });
